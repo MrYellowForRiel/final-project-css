@@ -1,0 +1,46 @@
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: yellow;
+  padding: 5px;
+}
+
+/* Navigation với flex */
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  padding: 0;
+}
+nav li a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #555;
+  transition: 0.3s;
+}
+
+/* Box model cho ảnh */
+img {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Grid layout cho gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.gallery img:nth-child(odd) {
+  border-radius: 50%;
+}
